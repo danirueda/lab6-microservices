@@ -1,35 +1,35 @@
-# Web Engineering 2015-2016 / Microservices
-Please, go to the [Wiki](https://github.com/UNIZAR-30246-WebEngineering/lab6-microservices/wiki) in order to get the instructions for this assignment.
+# Registration Service
+Registration service started.
+![Registration started](images/registration.png)
 
-NIA    | User name | Repo | Improvement | Score
--------|-----------|------|-------------|--------
-647002 | AGUILAR REQUENA, EDUARDO 
-666156 | BAREA LÓPEZ, DANIEL 
-666179 | BARRIOS GIL, ÁLVARO 
-612595 | BELTRÁN PIÑOL, VÍCTOR 
-683326 | BINTANED BASA, JESÚS 
-649003 | CAUDEVILLA CASAUS, JOSE ÁNGEL
-750846 | DAVID MOLINA, JOHN ALEXIS 
-529361 | DUMITRACHE , CATALIN  CONSTANTIN 
-535621 | FRÍAS ZAPATER, MARTA ALMUDENA
-680669 | GUIU PÉREZ, ALEJANDRO 
-682531 | JUAN CIRIACO, ÁLVARO 
-544393 | LAHOZ EGEA, CRISTINA 
-622612 | MARTIN SEGURA, SERGIO  
-681061 | MARTÍNEZ MENÉNDEZ, ALBERTO | [test repo](https://github.com/Belberus/lab6-microservices/tree/test) | |
-576307 | MARTÍNEZ PÉREZ, ADRIAN 
-540891 | MENENDEZ MOYA, FRANCISCO 
-680882 | MORENO JIMENO, RUBÉN 
-750849 | MOSQUERA ZAPATA, LUIS EDUARDO 
-650448 | MURILLO MAGDALENA, JAVIER 
-453948 | NAVARRO CLARAS, MARIO 
-647973 | PERALTA MARTÍNEZ, SANTIAGO 
-683546 | PÉREZ CANCER, BEATRIZ | [test repo](https://github.com/beapc18/lab6-microservices/tree/test)
-686329 | ROIG JIMENEZ, ANA | [test repo](https://github.com/anicacortes/lab6-microservices/tree/test)
-559207 | RUEDA MACÍAS, DANIEL 
-610344 | SALUEÑA SEDILES, ASIER 
-680182 | SANZ ALCAINE, JORGE 
-534521 | SANZ VIDAL, AITOR 
-618051 | TOLON MARTÍN, CARLOS JAVIER 
-643821 | VELA GARCÍA, JUAN 
-679609 | VIÑUALES SÁNCHEZ, PABLO 
+![Registration started02](images/registration02.png)
+
+#Account Service
+Account service started on port 2222.
+![Account service](images/account.png)
+
+![Account service02](images/account02.png)
+
+#Web Service
+Web service started on port 3333.
+![Web service](images/web.png)
+
+The two services are registered on the registration micro-service.
+![Web service02](images/web02.png)
+
+#Second account service
+A new account service is started on port 4444.
+![Second account service](images/account_second.png)
+
+The three services are registered on the registration micro-service.
+![Second accounr service02](images/account_second02.png)
+
+#Killing account service
+The account service on port 2222 is killed.
+![Killed account](images/account_second03.png)
+
+Now there are 2 micro-services registered on registration service.
+![Killed account02](images/account_second04.png)
+
+The registration service can't provide information about account service on port 2222 because there's no connection so,
+it can't be registered on the registration service.
