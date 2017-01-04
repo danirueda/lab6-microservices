@@ -28,8 +28,10 @@ The three services are registered on the registration micro-service.
 The account service on port 2222 is killed.
 ![Killed account](images/account_second03.png)
 
-Now there are 2 micro-services registered on registration service.
+Now, when the web service tries to communicate with the account service on port 2222, it gets a connection refused. Then, the web service communicates with Eureka asking for an account service, Eureka gives to it the account service on port 4444 and the web service can work again.
+
+One account service.
 ![Killed account02](images/account_second04.png)
 
-The registration service can't provide information about account service on port 2222 because there's no connection so,
-it can't be registered on the registration service.
+The web service keeps working thanks to Eureka.
+![Killed account03](images/account_second05.png)
